@@ -545,13 +545,12 @@ primary:
   ## @param primary.nodeSelector Node labels for PostgreSQL primary pods assignment
   ## ref: https://kubernetes.io/docs/user-guide/node-selection/
   ##
-  nodeSelector:
-        nodegroup-type: 'node-omega-core'
-  tolerations:
-        - effect: NoExecute
-          key: dedicated
-          operator: Equal
-          value: 'node-omega-core'
+  ##nodeSelector:
+    ##    nodegroup-type: 'node-omega-core'
+  ##    - effect: NoExecute
+    ##      key: dedicated
+      ##    operator: Equal
+        ##  value: 'node-omega-core'
   ## @param primary.labels Map of labels to add to the statefulset (postgresql primary)
   ##
   labels: {}
